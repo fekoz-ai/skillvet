@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skillvet"
+dynamic = ["version"]
+description = "Lint Claude Code skills, subagents and hooks: broken frontmatter, descriptions that never trigger, missing files, invalid hook config and leaked API keys."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Fekoz Studio" }]
+requires-python = ">=3.9"
+dependencies = []
+keywords = ["claude", "claude-code", "agent-skills", "skills", "subagents", "hooks", "linter", "lint"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Quality Assurance",
+]
+
+[project.optional-dependencies]
+yaml = ["PyYAML>=5.4"]
+dev = ["pytest>=7"]
+
+[project.scripts]
+skillvet = "skillvet.cli:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "skillvet.__version__" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,10 @@
+{
+  "hooks": {
+    "posttooluse": [
+      { "matcher": "Write", "hooks": [{ "type": "command" }] }
+    ],
+    "Stop": [
+      { "hooks": [{ "type": "http", "url": "http://hooks.example.org/stop", "timeout": 0 }] }
+    ]
+  }
+}

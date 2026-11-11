@@ -1,0 +1,7 @@
+- id: skillvet
+  name: skillvet
+  description: Lint Claude Code skills, subagents and hooks
+  entry: skillvet
+  language: python
+  pass_filenames: false
+  files: (SKILL\.md|agents/[^/]+\.md|settings(\.local)?\.json|hooks\.json|\.claude/.*)$
