@@ -29,7 +29,7 @@ pipx install skillvet        # or: pip install skillvet
 uvx skillvet .               # run once without installing
 ```
 
-Python 3.9+. No dependencies. Install `skillvet[yaml]` to validate frontmatter with PyYAML; without it, a built-in parser handles the YAML used in frontmatter.
+Python 3.10+. No dependencies. Install `skillvet[yaml]` to validate frontmatter with PyYAML; without it, a built-in parser handles the YAML used in frontmatter.
 
 ## Use
 

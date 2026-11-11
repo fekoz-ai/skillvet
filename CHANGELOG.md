@@ -2,7 +2,7 @@
 
 ## 0.1.0
 
-First release.
+First release. Requires Python 3.10 or newer.
 
 - Skills: frontmatter, name and description rules from the Agent Skills spec, trigger and third-person checks, size limits, missing referenced files, nested skills.
 - Subagents: required fields, model, enums, `bypassPermissions`, empty prompts, duplicate names.

@@ -9,7 +9,7 @@ description = "Lint Claude Code skills, subagents and hooks: broken frontmatter,
 readme = "README.md"
 license = { text = "MIT" }
 authors = [{ name = "Fekoz Studio" }]
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 dependencies = []
 keywords = ["claude", "claude-code", "agent-skills", "skills", "subagents", "hooks", "linter", "lint"]
 classifiers = [
