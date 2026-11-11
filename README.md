@@ -25,11 +25,11 @@ $ skillvet .
 ## Install
 
 ```bash
-pipx install skillvet        # or: pip install skillvet
-uvx skillvet .               # run once without installing
+pipx install fekoz-skillvet          # or: pip install fekoz-skillvet
+uvx --from fekoz-skillvet skillvet . # run once without installing
 ```
 
-Python 3.10+. No dependencies. Install `skillvet[yaml]` to validate frontmatter with PyYAML; without it, a built-in parser handles the YAML used in frontmatter.
+Python 3.10+. No dependencies. Install `fekoz-skillvet[yaml]` to validate frontmatter with PyYAML; without it, a built-in parser handles the YAML used in frontmatter.
 
 ## Use
 
@@ -76,7 +76,7 @@ GitHub Actions:
 - uses: actions/setup-python@v5
   with:
     python-version: "3.12"
-- run: pipx run skillvet --strict
+- run: pipx run --spec fekoz-skillvet skillvet --strict
 ```
 
 [pre-commit](https://pre-commit.com):

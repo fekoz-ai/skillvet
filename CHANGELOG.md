@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1
+
+- Published on PyPI as `fekoz-skillvet` (the command is still `skillvet`).
+- Requires Python 3.10 or newer.
+
 ## 0.1.0
 
 First release. Requires Python 3.10 or newer.
